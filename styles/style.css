@@ -9,3 +9,7 @@
   height: 100vh;
   background: #000000;
 }
+
+.main-heading-addressing{
+  color: linear-gradient(to bottom,#00E0C6,#009393);
+}
