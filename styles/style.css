@@ -7,10 +7,10 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: #000000;
+  background: none;
 }
 
 .main-heading-addressing{
-  color:  #FFFFFF/*linear-gradient(30deg,#00E0C6,#009393)*/;
+  color:  #00ccff/*linear-gradient(30deg,#00E0C6,#009393)*/;
   font-size: 20px;
 }
