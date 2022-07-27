@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-.main-head{
+.main-head-container{
   position: fixed;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
-  background: none;
 }
 
 .main-heading-addressing{
