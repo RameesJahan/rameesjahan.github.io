@@ -11,5 +11,6 @@
 }
 
 .main-heading-addressing{
-  color: linear-gradient(to bottom,#00E0C6,#009393);
+  color:  #ffffff/*linear-gradient(30deg,#00E0C6,#009393)*/;
+  font-size: 20px;
 }
