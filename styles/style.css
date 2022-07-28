@@ -1,15 +1,98 @@
-* {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border;
+  color: #FFF;
+  font-family: GlametrixBold;
 }
-.main-head-container{
-  position: fixed;
-  width: 50vw;
+.container{
+  background: #000;
+  width: 100vw;
   height: 100vh;
 }
+.head-folks{
+  position: absolute;
+  left: 5vw;
+  top: 25vh;
+  font-size: 1.5rem;
+  color: #44E3FF;
+ /* background: -webkit-linear-gradient(30deg,#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  font-family: GlametrixBold;
+}
+.head-normal{
+  position: absolute;
+  left: 5vw;
+  top: 40vh;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-family: GlametrixBold;
+}
+.head-name{
+  color: #6F88FE;
+  padding: .1em;
+  font-weight: bolder;
+}
+.head-name::before{
+  content: "I'm";
+  color: #FFFFFF;
+  font-size: 2rem;
+  position: absolute;
+  transform: translate(0, -25px);
+}
 
-.main-heading-addressing{
-  color:  #00ccff/*linear-gradient(30deg,#00E0C6,#009393)*/;
-  font-size: 20px;
+.head-avater-body{
+  position: absolute;
+  right: 3vw;
+  top: 20vh;
+  width: auto;
+  height: auto;
+}
+
+.head-avater{
+  width: 60vw;
+  height: auto;
+}
+
+.head-avater-body::after{
+  content: ' ';
+  position: absolute;
+  background-image: linear-gradient(10deg,#000000 3%,transparent 80%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.reveal{
+  opacity: 0;
+  animation: reveal ease-in .5s forwards;
+}
+.head-disc-body{
+  position: absolute;
+  margin: 5%;
+  top: 50vh;
+  font-size: 1.5rem;
+}
+
+@keyframes reveal{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+/*Custom Fonts*/
+
+@font-face{
+  font-family:Skaters;
+  src: url(fonts/Skaters-K7wXy.otf);
+}
+
+@font-face{
+  font-family:GlametrixBold;
+  src: url(fonts/GlametrixBold-4dW6.otf);
 }
