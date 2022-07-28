@@ -5,6 +5,63 @@
   color: #FFF;
   font-family: GlametrixBold;
 }
+
+/* Pre Loader*/
+
+.loader{
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #000000;
+  align-items: center;
+  justify-content:center ;
+  transition: 0.5s;
+  z-index: 100;
+}
+.l-body{
+  content: '';
+  position: relative;
+  display: flex;
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px dashed #6F88FE;
+  align-items: center;
+  justify-content:center ;
+  animation: rotater ease-in-out 4s infinite;
+}
+.l-body::after{
+  content: '';
+  background: transparent;
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 5px dashed #44E3FF;
+  border-radius: 50%;
+  animation: rotater ease-in-out 2s infinite;
+  animation-direction: reverse;
+}
+.hide{
+  opacity: 0;
+  visibility: hidden;
+  
+}
+
+@keyframes rotater{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+/*main body*/
 .container{
   background: #000;
   width: 100vw;
