@@ -118,7 +118,7 @@
 .head-avater-body::after{
   content: ' ';
   position: absolute;
-  background-image: linear-gradient(0deg,#000000 3%,transparent 80%);
+  background-image: linear-gradient(0deg,#000000 10%,transparent 80%);
   left: 0;
   top: 0;
   width: 100%;
