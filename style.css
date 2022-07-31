@@ -144,6 +144,15 @@
   }
 }
 
+/*Section Skills*/
+
+.skills-section{
+  padding: 10px 3vw;
+}
+
+.skills-card-icon{
+  width: 15vw;
+}
 
 /*Custom Fonts*/
 
