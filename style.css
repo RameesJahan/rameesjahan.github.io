@@ -62,7 +62,7 @@
 }
 
 /*main body*/
-.container{
+.main-section .container{
   background: #000;
   width: 100vw;
   height: 100vh;
