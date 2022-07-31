@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border;
-  color: #FFF;
-  font-family: GlametrixBold;
+  font-family: OpenSans;
 }
 
 /* Pre Loader*/
@@ -130,9 +129,10 @@
 }
 .head-disc-body{
   position: absolute;
+  color: #FFFFF2;
   margin: 5%;
   top: 50vh;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @keyframes reveal{
@@ -155,4 +155,9 @@
 @font-face{
   font-family:GlametrixBold;
   src: url(fonts/GlametrixBold-4dW6.otf);
+}
+
+@font-face{
+  font-family:OpenSans;
+  src: url(fonts/OpenSans-B9K8.ttf);
 }
