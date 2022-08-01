@@ -149,11 +149,64 @@
 .skills-section{
   padding: 10px 3vw;
 }
+.skills-section .container{
+  display: flex;
+  align-items: center;
+}
+
+.skills-content{
+  width: 100%;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.col{
+  padding: 2vw;
+}
+.skills-head{
+  color: #b8b8b8;
+  margin-top: 5px;
+  font-size: 10vw;
+  font-family: GlametrixBold;
+}
+
+.skills-card{
+  display: flex;
+  padding: 1vw 3vw;
+  padding-left: 2vw;
+  border-radius: 3vw;
+  box-shadow: 0 0 3vw #e8e8e8;
+  align-items: center;
+}
 
 .skills-card-icon{
   width: 15vw;
+  padding: 1vw;
+}
+.skills-card-title{
+  color: #0F172E;
+  font-size: 5vw;
+  padding: 1vw;
+  font-weight: bold;
 }
 
+.img-copy{
+  color: #aaaaaa;
+  font-size: 3vw;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  transform: rotate(-90deg) translate(0,7vw);
+}
+.img-copy a{
+  text-decoration: none;
+}
 /*Custom Fonts*/
 
 @font-face{
