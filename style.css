@@ -147,6 +147,7 @@
 /*Section Skills*/
 
 .skills-section{
+  user-select: none;
   padding: 10px 3vw;
 }
 .skills-section .container{
