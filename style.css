@@ -205,6 +205,26 @@
 .img-copy a {
   text-decoration: none;
 }
+
+/*Footer*/
+
+.footer{
+  width: 100vw;
+  padding: 3vw;
+  background: #6F88FE;
+}
+.footer-body{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.footer-body i{
+  margin: 2vw;
+  font-size: 25px;
+}
+
+
 /*Custom Fonts*/
 
 @font-face {
