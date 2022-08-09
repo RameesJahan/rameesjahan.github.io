@@ -184,12 +184,12 @@
 }
 
 .skills-card-icon{
-  width: 15vw;
+  width: 65px;
   padding: 1vw;
 }
 .skills-card-title{
   color: #0F172E;
-  font-size: 5vw;
+  font-size: 25px;
   padding: 1vw;
   font-weight: bold;
 }
@@ -213,10 +213,14 @@
 
 .footer{
   width: 100vw;
-  background: #6F88FE;
+  background: #44E3FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 .footer-body{
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -225,6 +229,13 @@
   margin: 3vw;
   font-size: 25px;
 }
+.copyright-txt{
+  margin: 1vw;
+  margin-bottom: 3vw;
+  margin-top: 0;
+  font-size: 10px;
+}
+
 
 
 /*Custom Fonts*/
