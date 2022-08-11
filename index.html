@@ -124,24 +124,27 @@
       <div class="container">
         <h3 class="sub-head">#Contact Me</h3>
         <div class="contact-content">
+          <form class="contact-form" id="contact-form">
           
-          <label class="label" for="contact-name">Full Name</label>
-          <input type="text" class="input-box" name="contact-name" id="contact-name" placeholder="Your Full Name" value="" />
-          <p class="err-msg" id="err-msg-name">Please enter your Name</p>
-          
-          <label class="label" for="contact-mail">Email</label>
-          <input type="email" class="input-box" name="contact-mail" id="contact-mail" placeholder="Your Email" value="" />
-          <p class="err-msg" id="err-msg-mail">Please enter your Email</p>
-          
-          <label class="label" for="contact-subject">Subject</label>
-          <input type="text" class="input-box" name="contact-subject" id="contact-subject" placeholder="Subject" value="" />
-          <p class="err-msg" id="err-msg-suject">Please enter Subject</p>
-          
-          <label class="label" for="contact-disc">Message</label>
-          <textarea name="contact-disc" class="input-box" id="contact-disc" placeholder="Message" rows="8" cols="40"></textarea>
-          <p class="err-msg" id="err-msg-disc" >Please enter Message</p>
-          
-          <input type="submit" class="btn-submit input-box" name="btn-submit" id="btn-submit" value="Send" />
+            <label class="label" for="contact-name">Full Name</label>
+            <input type="text" class="input-box" name="contact-name" id="contact-name" placeholder="Your Full Name" value="" required/>
+            <p class="err-msg" id="err-msg-name">Please enter your Name</p>
+            
+            <label class="label" for="contact-mail">Email</label>
+            <input type="email" class="input-box" name="contact-mail" id="contact-mail" placeholder="Your Email"  value="" required/>
+            <p class="err-msg" id="err-msg-mail">Please enter valid Email</p>
+            
+            <label class="label" for="contact-subject">Subject</label>
+            <input type="text" class="input-box" name="contact-subject" id="contact-subject" placeholder="Subject" value="" required/>
+            <p class="err-msg" id="err-msg-subject">Please enter Subject</p>
+            
+            <label class="label" for="contact-disc">Message</label>
+            <textarea name="contact-disc" class="input-box" id="contact-disc" placeholder="Message" rows="8" cols="40" required></textarea>
+            <p class="err-msg" id="err-msg-disc" >Please enter Message</p>
+            
+            <input type="submit" class="btn-submit input-box" name="btn-submit" id="btn-submit" value="Send" />
+              
+          </form>
         </div>
       </div>
     </section>

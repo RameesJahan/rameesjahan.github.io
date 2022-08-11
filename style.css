@@ -232,11 +232,12 @@ a{
   
 }
 .contact-content{
+  margin: 3vw;
+}
+.contact-form{
   display: flex;
   flex-direction: column;
   flex-wrap: row wrap;
-  margin: 3vw;
-  
 }
 
 .input-box{
@@ -278,7 +279,7 @@ a{
   font-size: 12px;
   color: #FF0000;
   display: none;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 /*Footer*/
