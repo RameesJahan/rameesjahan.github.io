@@ -145,13 +145,22 @@ nav ul li a{
 }
 
 .main-btn{
-  color: var(--primary-white);
-  background: var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
   text-decoration: none;
   padding: 0.75em 2em;
   border-radius: 6em;
   font-size: 18px;
   font-weight: 500;
+  border: 3px solid var(--primary-color);
+  
+}
+
+.main-btn:hover{
+  color: var(--primary-white);
+  /*box-shadow: 2px 2px 8px var(--primary-color),
+              -2px -2px 8px var(--primary-color);*/
+  background: var(--primary-color);
 }
 
 .img-main{
