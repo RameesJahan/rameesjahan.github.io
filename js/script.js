@@ -7,5 +7,7 @@ window.onscroll = () => {
 }
 
 const navToggle = () => {
+  document.getElementById("nav-humburger").classList.toggle("is-active");
   document.getElementById("nav-toggle").classList.toggle("nav-show");
 }
+
