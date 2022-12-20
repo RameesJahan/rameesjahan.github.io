@@ -10,6 +10,8 @@
   --primary-font: 'Josefin Sans', sans-serif;
   --primary-white: #f5f5f5;
   --primary-black-transparent: rgba(27, 28, 30, 0.75);
+  --primary-black: #1B1C1E;
+  
 }
 
 * {
@@ -22,6 +24,16 @@ body {
 
 p {
   line-height: 2em;
+}
+
+/*Title Style For Sections*/
+.title-section{
+  color: var(--primary-white);
+  text-shadow: 2.5px 2.5px var(--primary-color);
+  font-size: 30px;
+  font-weight: 700;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: var(--primary-color);
 }
 
 .section-head {
@@ -74,6 +86,7 @@ nav {
 
 .hamburger {
   padding: 15px 15px;
+  padding-right: 0;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -95,8 +108,8 @@ nav {
 }
 
 .hamburger-box {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
   display: inline-block;
   position: relative;
 }
@@ -109,10 +122,9 @@ nav {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  width: 24px;
+  width: 35px;
   height: 2px;
   background-color: var(--primary-color);
-  border-radius: 4px;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
@@ -197,22 +209,24 @@ nav ul li a {
     display: block;
     height: 65px;
     width: 65px;
+    padding-right: 0;
+    margin-right: 0;
   }
 }
 
 .main-title {
-  color: var(--primary-color);
-  font-family: var(--primary-font);
+  color: var(--primary-black);
+  text-shadow: 2px 2px var(--primary-color);
   font-size: 2rem;
   font-weight: 900;
 }
-
+/*
 .main-title span {
   color: transparent;
   -webkit-text-stroke-width: thin;
   -webkit-text-stroke-color: var(--primary-color);
 }
-
+*/
 .main-heading-container {
   display: inline-block;
 }
@@ -225,7 +239,7 @@ nav ul li a {
   animation: typing steps(11, end) 1.2s forwards, blink 0.9s infinite;
   overflow: hidden;
   white-space: nowrap;
-}
+} 
 
 @keyframes typing {
   from {
@@ -258,11 +272,11 @@ nav ul li a {
   color: var(--primary-color);
   background: transparent;
   text-decoration: none;
-  padding: 0.75em 2em;
-  border-radius: 6em;
+  padding: 0.50em 1.50em;
   font-size: 18px;
   font-weight: 500;
   border: 3px solid var(--primary-color);
+  box-shadow: 3px 3px var(--primary-color);
 }
 
 .main-btn:hover {
