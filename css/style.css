@@ -23,6 +23,7 @@ body {
 }
 
 p {
+  font-size: 18px;
   line-height: 2em;
 }
 
@@ -75,7 +76,7 @@ nav {
 
 .bg-show {
   background: var(--primary-black-transparent);
-  transition: 1s;
+  transition: 500ms;
 }
 
 .nav-toggle-icon {
@@ -171,6 +172,10 @@ nav {
     transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+nav ul{
+  background: red;
+}
+
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -181,6 +186,7 @@ nav ul li a {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -302,6 +308,7 @@ nav ul li a {
 .about-img-main {
   width: 100%;
   height: auto;
+  filter: drop-shadow(1.5px 1.5px #057a7e);
 }
 .about-content-container {
   margin: 15px;
