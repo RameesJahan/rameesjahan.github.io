@@ -345,3 +345,24 @@ nav ul li a {
   background: #03989e;
   height: 100%;
 }
+
+.scroll-me{
+  position: fixed;
+  bottom: 5vh;
+  z-index: 1000;
+  animation: bounce 1s infinite;
+  transition: 0.5s;
+}
+.scroll-me svg{
+  fill: var(--primary-white);
+}
+.hide{
+  display: none;
+}
+
+@keyframes bounce{
+  50%{
+    transform: translate(0,20px);
+  }
+  
+}
