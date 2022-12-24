@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=Roboto:wght@300;400;500;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
 @font-face {
-    font-family: 'AquireBold';
-    src: url("../fonts/AquireBold.otf") format("truetype");
+  font-family: "AquireBold";
+  src: url("../fonts/AquireBold.otf") format("truetype");
 }
 
 :root {
   --primary-color: #03989e;
-  --primary-font: 'Josefin Sans', sans-serif;
+  --primary-font: "Josefin Sans", sans-serif;
   --primary-white: #f5f5f5;
   --primary-black-transparent: rgba(27, 28, 30, 0.75);
-  --primary-black: #1B1C1E;
-  
+  --primary-black: #1b1c1e;
 }
 
 * {
+  box-sizing: border-box;
   font-family: var(--primary-font);
 }
 
@@ -28,7 +28,7 @@ p {
 }
 
 /*Title Style For Sections*/
-.title-section{
+.title-section {
   color: var(--primary-white);
   text-shadow: 2.5px 2.5px var(--primary-color);
   font-size: 30px;
@@ -172,10 +172,6 @@ nav {
     transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-nav ul{
-  background: red;
-}
-
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -238,14 +234,14 @@ nav ul li a {
 }
 
 .main-heading {
-  font-family:  "AquireBold";
+  font-family: "AquireBold";
   color: var(--primary-color);
   font-size: 35px;
   border-right: 0.15em solid orange;
   animation: typing steps(11, end) 1.2s forwards, blink 0.9s infinite;
   overflow: hidden;
   white-space: nowrap;
-} 
+}
 
 @keyframes typing {
   from {
@@ -278,7 +274,7 @@ nav ul li a {
   color: var(--primary-color);
   background: transparent;
   text-decoration: none;
-  padding: 0.50em 1.50em;
+  padding: 0.5em 1.5em;
   font-size: 18px;
   font-weight: 500;
   border: 3px solid var(--primary-color);
@@ -293,17 +289,15 @@ nav ul li a {
 }
 
 .about-content {
-  display: flex;
   width: 100%;
   position: relative;
-  flex-direction: row;
 }
 .about-img-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15px;
-  min-width: 300px;
+  margin: 15px 0;
+  padding: 0 30px;
 }
 .about-img-main {
   width: 100%;
@@ -311,15 +305,43 @@ nav ul li a {
   filter: drop-shadow(1.5px 1.5px #057a7e);
 }
 .about-content-container {
-  margin: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 0 30px;
+}
+.skills-content-container {
+  margin: 15px;
+}
+.skills-content-main {
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+}
+.skills-content-main-block{
+  margin: 15px 0px;
+  padding: 0 10px;
+}
+.skills-content-main-title-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-@media only screen and (max-width: 600px){
- .about-content{
-   flex-direction: column;
- }
-
+.bar-container {
+  margin: 0;
+  padding: 1px;
+  position: relative;
+  width: 100%;
+  height: 15px;
+  border: 2px solid #03989e;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 2px 2px #03989e;
+}
+.bar-progress {
+  background: #03989e;
+  height: 100%;
 }
