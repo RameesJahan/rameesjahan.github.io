@@ -1,3 +1,11 @@
+//pre loader
+window.addEventListener("load", loaderHide);
+function loaderHide() {
+  let loaderIcon = document.getElementById("loader-container");
+  loaderIcon.classList.add("hide");
+}
+
+
 window.onscroll = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("nav-bar").classList.add("bg-show");
