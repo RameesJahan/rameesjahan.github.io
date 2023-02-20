@@ -1,166 +1,291 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+
     <title>Ramees Jahan</title>
 
-    <meta
-      name="google-site-verification"
-      content="Gy8ll0emWiKNuLHBLA8GN5CLLpFRt9DsiYmFETWgOOU"
-    />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
-
-    <link href="style.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/31d210da8a.js"
+    <!---bootstrap styles-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    ></script>
+    />
+    <!---font-awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!---My styles-->
+    <link rel="stylesheet" href="./css/style.min.css" type="text/css" media="all" />
   </head>
-  <body oncontextmenu="return false">
-    <!--Pre Loader -->
-
-    <div class="loader" id="loader"><div class="l-body"></div></div>
-
-    <!--Main Heading Section -->
-
-    <section class="main-section">
-      <div class="container">
-        <div class="head-avater-body">
-          <img
-            class="head-avater reveal"
-            src="images/head-avater.png"
-            alt="head-avater"
-            oncontextmenu="return false;"
-          />
+  <body>
+    <div class="loader-container" id="loader-container">
+      <span class="loader"></span>
+    </div>
+    <div class="main-body">
+      <section class="section-head" id="section-head">
+        <h3>Hello, I am</h3>
+        <div class="main-heading-container">
+          <h1 class="main-heading">Ramees Jahan</h1>
         </div>
-        <p class="head-folks reveal">Hey Folks!</p>
-        <p class="head-name head-normal reveal" title="Ramees Jahan">
-          Ramees Jahan
+        <p class="main-disc">
+          A Student at
+          <a href="https://sias.edu.in/">SAFI Institute of Advanced Study</a>
         </p>
-
-        <div class="head-disc-body">
-          <p class="head-disc reveal">
-            I'm from India, living in Malappuram, Kerala and currently
-            continueing my Bachelor's in Computer Application at SAFI Institute
-            of Advanced Study.I already completed HTML and JAVA course in
-            SoloLearn.
-          </p>
+        <a class="main-btn" onclick="scrollToSection('section-contact')">Connect Me</a>
+        <video autoplay muted loop class="bg-video">
+          <source src="videos/bgvideo.mp4" type="video/mp4" />
+        </video>
+        <nav id="nav-bar">
+          <h1 class="main-title title-section">Ramees</h1>
+          <ul id="nav-toggle">
+            <li class="nav-list-item shown">
+              <a  onclick="scrollToSection('section-head');navToggle()">Home</a>
+            </li>
+            <li class="nav-list-item shown">
+              <a  onclick="scrollToSection('section-about');navToggle()">About</a>
+            </li>
+            <li class="nav-list-item shown">
+              <a onclick="scrollToSection('section-skills');navToggle()">Skills</a>
+            </li>
+            <li class="nav-list-item shown">
+              <a onclick="scrollToSection('section-contact');navToggle()">Connect</a>
+            </li>
+          </ul>
+          <div class="nav-toggle-icon">
+            <div
+              id="nav-humburger"
+              class="hamburger hamburger--spin"
+              onclick="navToggle()"
+            >
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div onclick="scrollToSection('section-about')" class="scroll-me" id="scroll-me">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="50"
+            height="50"
+          >
+            <path
+              d="M5.22 8.72a.75.75 0 011.06 0L12 14.44l5.72-5.72a.751.751 0 011.042.018.751.751 0 01.018 1.042l-6.25 6.25a.75.75 0 01-1.06 0L5.22 9.78a.75.75 0 010-1.06z"
+            ></path>
+          </svg>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--Skills Section -->
-
-    <section class="skills-section">
-      <div class="container">
-        <p class="img-copy">
-          Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </p>
-        <div class="skills-content">
-          <h3 class="skills-head sub-head">#Skills</h3>
-          <div class="row">
-            <div class="col">
-              <div class="skills-card">
+      <section id="section-about" class="section-about">
+        <div class="container">
+          <div class="about-content container">
+            <div class="row">
+              <div class="about-img-container col-sm-4">
                 <img
-                  class="skills-card-icon"
-                  src="images/icon-html.png"
-                  alt=""
+                  class="about-img-main"
+                  src="./images/img_main.png"
+                  alt="Image Not Found"
                 />
-                <p class="skills-card-title">HTML</p>
               </div>
-            </div>
-
-            <div class="col">
-              <div class="skills-card">
-                <img
-                  class="skills-card-icon"
-                  src="images/icon-css.png"
-                  alt=""
-                />
-                <p class="skills-card-title">CSS</p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="skills-card">
-                <img
-                  class="skills-card-icon"
-                  src="images/icon-javascript.png"
-                  alt=""
-                />
-                <p class="skills-card-title">Java Script</p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="skills-card">
-                <img
-                  class="skills-card-icon"
-                  src="images/icon-java.png"
-                  alt=""
-                />
-                <p class="skills-card-title">Java</p>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="skills-card">
-                <img
-                  class="skills-card-icon"
-                  src="images/icon-git.png"
-                  alt=""
-                />
-                <p class="skills-card-title">Git</p>
+              <div class="about-content-container col-sm-8">
+                <h2 class="about-content-title title-section">About Me</h2>
+                <p class="about-content-disc">
+                  &emsp;I am currently a student at SAFI Institute of Advanced
+                  Study, where I am earning my Bachelor's degree in Computer
+                  Application. As a self taught web developer, I am proficient
+                  in HTML, CSS and JavaScript. I am passionate about web
+                  development and enjoy working on projects that challenge my
+                  coding skills. I am always eager to learn new technologies and
+                  improve my existing skills.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <!---contact section-->
-    
-    <section class="contact-section" id="contact-section">
-      <div class="container">
-        <h3 class="sub-head">#Contact Me</h3>
-        <div class="contact-content">
-          <form class="contact-form" id="contact-form">
-          
-            <label class="label" for="contact-name">Full Name</label>
-            <input type="text" class="input-box" name="contact-name" id="contact-name" placeholder="Your Full Name" value="" required/>
-            <p class="err-msg" id="err-msg-name">Please enter your Name</p>
-            
-            <label class="label" for="contact-mail">Email</label>
-            <input type="email" class="input-box" name="contact-mail" id="contact-mail" placeholder="Your Email"  value="" required/>
-            <p class="err-msg" id="err-msg-mail">Please enter valid Email</p>
-            
-            <label class="label" for="contact-subject">Subject</label>
-            <input type="text" class="input-box" name="contact-subject" id="contact-subject" placeholder="Subject" value="" required/>
-            <p class="err-msg" id="err-msg-subject">Please enter Subject</p>
-            
-            <label class="label" for="contact-disc">Message</label>
-            <textarea name="contact-disc" class="input-box" id="contact-disc" placeholder="Message" rows="8" cols="40" required></textarea>
-            <p class="err-msg" id="err-msg-disc" >Please enter Message</p>
-            
-            <input type="submit" class="btn-submit input-box" name="btn-submit" id="btn-submit" value="Send" />
-              
-          </form>
+      </section>
+
+      <section id="section-skills" class="section-skills">
+        <div class="container">
+          <div class="skills-content container">
+            <div class="skills-content-container">
+              <h2 class="skills-content-title title-section">Skills</h2>
+              <div class="skills-content-main row">
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">HTML</h5>
+                    <h5 class="skills-content-main-progress">90%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">CSS</h5>
+                    <h5 class="skills-content-main-progress">80%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">Java Script</h5>
+                    <h5 class="skills-content-main-progress">75%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 75%"></div>
+                  </div>
+                </div>
+
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">Git</h5>
+                    <h5 class="skills-content-main-progress">80%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">Java</h5>
+                    <h5 class="skills-content-main-progress">70%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 70%"></div>
+                  </div>
+                </div>
+
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">Android</h5>
+                    <h5 class="skills-content-main-progress">75%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
- <!--Footer-->
- 
-    <section class="footer">
-      <div class="footer-body">
-        <a href="https://github.com/RameesJahan"><i class="fa-brands fa-github"></i></a>
-        <a href="https://twitter.com/RameesKZP"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com/ramees_kzp/"><i class="fa-brands fa-instagram"></i></a>
-        <!--<a href="https://www.facebook.com/people/Ramees-Jahan-Kzp/100022148014436/"><i class="fa-brands fa-facebook"></i></a>-->
-      </div>
-      <p class="copyright-txt">© All rights reserved.</p>
-    </section>
+      <section class="section-contact" id="section-contact">
+        <div class="container">
+          <div class="contact-content container">
+            <h2 class="contact-content-title title-section">Connect</h2>
 
-    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+            <div class="container row">
+              <div class="col-sm-6">
+                <div class="contact-tagline-container">
+                  <p>
+                    Thanks for stopping by! Whether you have questions,
+                    comments, or just want to say hello, I'm always happy to
+                    connect with new people. Feel free to reach out and start
+                    the conversation!”
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="contact-links-container">
+                  <div>
+                    <img
+                      class="icon"
+                      src="./images/mail.png"
+                      alt="Image Not Found"
+                    /> <a href="mailto:rameesjahan37@gmail.com?subject=ProfileVisit">rameesjahan37@gmail.com</a>
+                  </div>
+                  <div>
+                    <img
+                      class="icon"
+                      src="./images/location.png"
+                      alt="Image Not Found"
+                    />Areekode, Kerala, India
+                  </div>
+                  <div class="icons-wrapper">
+                    <a href="https://www.instagram.com/ramees_kzp/">
+                      <div class="icon-container">
+                        <img class="icon" src="./images/instagram.png" />
+                      </div>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100022148014436">
+                      <div class="icon-container">
+                        <img class="icon" src="./images/facebook.png" />
+                      </div>
+                    </a>
+                    <a href="https://twitter.com/RameesKZP">
+                      <div class="icon-container">
+                        <img class="icon" src="./images/twitter.png" />
+                      </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ramees-jahan-900816255">
+                      <div class="icon-container">
+                        <img class="icon" src="./images/linkedin.png" />
+                      </div>
+                    </a>
+                    <a href="https://github.com/RameesJahan">
+                      <div class="icon-container">
+                        <img class="icon" src="./images/github.png" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-footer">
+        <div class="row container">
+          <div class="col-sm-6">
+            <h3 class="footer-title">Quik Links</h4>
+            <div class="footer-links-container">
+              <p onclick="scrollToSection('section-head')">Home</p>
+              <p onclick="scrollToSection('section-about')">About</p>
+              <p onclick="scrollToSection('section-skills')">Skills</p>
+              <p onclick="scrollToSection('section-contact')">Contact</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h3 class="footer-title">Credits</h3>
+            <div class="footer-credits-container row">
+              <p>Icons and Videos are from:</p>
+              <a class="col" href="https://www.flaticon.com/"><img class="credit-icon" src="./images/flaticon.svg"/></a>
+              <a class="col" href="https://pixabay.com/videos/"><img class="credit-icon pixabay" src="./images/pixabay.png"/></a>
+            </div>
+          </div>
+          <p class="copyright-text">©Ramees Jahan</p>
+        </div>
+      </section>
+    </div>
+
+    <!---scripts-->
+    <script
+      src="./js/script.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+
+    <!---bootstrap scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
