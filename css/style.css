@@ -11,6 +11,7 @@
   --primary-white: #f5f5f5;
   --primary-black-transparent: rgba(27, 28, 30, 0.75);
   --primary-black: #1b1c1e;
+  --primary-white-transparent: rgba(245,245,245,0.5);
 }
 
 * {
@@ -25,6 +26,22 @@ body {
 p {
   font-size: 18px;
   line-height: 2em;
+}
+a,a:hover{
+  color: var(--primary-black);
+}
+
+
+.icon{
+  width: 28px;
+  height: 28px;
+  margin: 4px;
+  object-fit: contain;
+}
+
+.border-theme{
+  border: 3px solid var(--primary-color);
+  box-shadow: 3px 3px var(--primary-color);
 }
 
 /*Title Style For Sections*/
@@ -358,6 +375,100 @@ nav ul li a {
 }
 .hide{
   display: none;
+}
+
+.section-contact{
+  margin-top: 50px;
+}
+
+.contact-content-title{
+  margin: 10px;
+}
+
+.icons-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.icon-container{
+  position: relative;
+  margin: 5px;
+  padding: 3px;
+  border: 3px solid var(--primary-color);
+  box-shadow: 3px 3px var(--primary-color);
+}
+
+.icon-container,
+.icon-container img{
+  transition: 300ms;
+}
+
+.icon-container:hover{
+  background-color: var(--primary-color);
+}
+
+.icon-container:hover img{
+  filter: invert(0.95);
+}
+
+.contact-tagline-container{
+  margin: 0;
+  padding: 30px;
+  width: 100%;
+  color: var(--primary-white);
+  background-color: var(--primary-color);
+}
+.contact-links-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding-top: 30px;
+}
+.section-footer{
+  width:100%;
+  margin: 0;
+  margin-top: 50px;
+  background-color: var(--primary-black);
+}
+
+.footer-title{
+  color: var(--primary-white);
+  margin: 15px;
+  margin-bottom: 5px;
+}
+
+.footer-links-container{
+  color: var(--primary-white-transparent);
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  margin-top: 0;
+}
+.footer-links-container p{
+  margin: 0;
+  padding: 3px;
+}
+.footer-credits-container{
+  color: var(--primary-white-transparent);
+  margin: 25px;
+}
+
+.credit-icon{
+  margin: 5px;
+  width: 128px;
+  object-fit: contain;
+  align-self: flex-start;
+}
+.pixabay{
+  filter: invert(1);
+}
+
+.copyright-text{
+  color: var(--primary-white);
+  text-align: center;
 }
 
 @keyframes bounce{
