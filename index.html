@@ -41,7 +41,10 @@
           A Student at
           <a href="https://sias.edu.in/">SAFI Institute of Advanced Study</a>
         </p>
-        <a class="main-btn" onclick="scrollToSection('section-contact')">Connect Me</a>
+        <div class="main-btn-container">
+          <a class="main-btn" href="./resume/Ramees_Jahan_Resume.pdf">Get Resume</a>
+          <a class="main-btn" onclick="scrollToSection('section-contact')">Contact Me</a>
+        </div>
         <video autoplay muted loop class="bg-video">
           <source src="videos/bgvideo.mp4" type="video/mp4" />
         </video>
@@ -58,7 +61,7 @@
               <a onclick="scrollToSection('section-skills');navToggle()">Skills</a>
             </li>
             <li class="nav-list-item shown">
-              <a onclick="scrollToSection('section-contact');navToggle()">Connect</a>
+              <a onclick="scrollToSection('section-contact');navToggle()">Contact</a>
             </li>
           </ul>
           <div class="nav-toggle-icon">
@@ -101,13 +104,14 @@
               <div class="about-content-container col-sm-8">
                 <h2 class="about-content-title title-section">About Me</h2>
                 <p class="about-content-disc">
-                  &emsp;I am currently a student at SAFI Institute of Advanced
-                  Study, where I am earning my Bachelor's degree in Computer
-                  Application. As a self taught web developer, I am proficient
-                  in HTML, CSS and JavaScript. I am passionate about web
-                  development and enjoy working on projects that challenge my
-                  coding skills. I am always eager to learn new technologies and
-                  improve my existing skills.
+                  &emsp;Hello! I'm Ramees Jahan, a final year student pursuing BCA at SAFI
+                  Institute of Advanced Study, Vazhayur. With a passion for web
+                  development, I've honed my skills in HTML, CSS, and JavaScript, and
+                  delved deeper into frameworks like React.js and Node.js. I'm proficient
+                  in utilizing tools such as Tailwind CSS and DaisyUI to create visually
+                  stunning and responsive websites. Additionally, I have experience
+                  working with databases like MongoDB and Firebase, enabling me to build
+                  dynamic and interactive web applications.
                 </p>
               </div>
             </div>
@@ -154,16 +158,6 @@
                 <div class="skills-content-main-block col-sm-6">
                   <div class="skills-content-main-title-container">
                     <h5 class="skills-content-main-title">Git</h5>
-                    <h5 class="skills-content-main-progress">80%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 80%"></div>
-                  </div>
-                </div>
-
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">Java</h5>
                     <h5 class="skills-content-main-progress">70%</h5>
                   </div>
                   <div class="bar-container">
@@ -173,13 +167,34 @@
 
                 <div class="skills-content-main-block col-sm-6">
                   <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">Android</h5>
+                    <h5 class="skills-content-main-title">React JS</h5>
+                    <h5 class="skills-content-main-progress">80%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">Node JS</h5>
                     <h5 class="skills-content-main-progress">75%</h5>
                   </div>
                   <div class="bar-container">
                     <div class="bar-progress" style="width: 75%"></div>
                   </div>
                 </div>
+                
+                <div class="skills-content-main-block col-sm-6">
+                  <div class="skills-content-main-title-container">
+                    <h5 class="skills-content-main-title">MongoDB</h5>
+                    <h5 class="skills-content-main-progress">75%</h5>
+                  </div>
+                  <div class="bar-container">
+                    <div class="bar-progress" style="width: 75%"></div>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -189,7 +204,7 @@
       <section class="section-contact" id="section-contact">
         <div class="container">
           <div class="contact-content container">
-            <h2 class="contact-content-title title-section">Connect</h2>
+            <h2 class="contact-content-title title-section">Contact</h2>
 
             <div class="container row">
               <div class="col-sm-6">
@@ -209,7 +224,7 @@
                       class="icon"
                       src="./images/mail.png"
                       alt="Image Not Found"
-                    /> <a href="mailto: contact@rameesjahan.me?subject=ProfileVisit">contact@rameesjahan.me</a>
+                    /> <a href="mailto: rameesjahan37@gmail.com?subject=ProfileVisit">rameesjahan37@gmail.com</a>
                   </div>
                   <div>
                     <img
@@ -219,7 +234,7 @@
                     />Areekode, Kerala, India
                   </div>
                   <div class="icons-wrapper">
-                    <a href="https://www.instagram.com/ramees_kzp/">
+                    <a href="https://www.instagram.com/ramees.kzp/">
                       <div class="icon-container">
                         <img class="icon" src="./images/instagram.png" />
                       </div>
@@ -234,7 +249,7 @@
                         <img class="icon" src="./images/twitter.png" />
                       </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/ramees-jahan-900816255">
+                    <a href="https://www.linkedin.com/in/ramees-jahan-m-a-900816255">
                       <div class="icon-container">
                         <img class="icon" src="./images/linkedin.png" />
                       </div>
@@ -254,7 +269,7 @@
       <section class="section-footer">
         <div class="row container">
           <div class="col-sm-6">
-            <h3 class="footer-title">Quik Links</h4>
+            <h3 class="footer-title">Quik Links</h3>
             <div class="footer-links-container">
               <p onclick="scrollToSection('section-head')">Home</p>
               <p onclick="scrollToSection('section-about')">About</p>
