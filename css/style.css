@@ -335,6 +335,11 @@ nav ul li a {
   color: var(--primary-white);
 }
 
+.main-btn-container{
+  display: flex;
+  gap: 12px;
+}
+
 .main-btn {
   color: var(--primary-color);
   background: transparent;
