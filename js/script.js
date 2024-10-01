@@ -127,8 +127,8 @@ function loadProjects() {
     item.tags.forEach(tag => {
       tagTxt += `<span class="project-item-tag">${tag}</span>`
     })
-    const txt = `<div class="col-sm-4 p-2" >
-      <div class="project-item-container col-sm-4">
+    const txt = `<div class="col-md-6 col-lg-4 p-2" >
+      <div class="project-item-container">
                 <div class="project-item-img-container">
                   <img class="project-item-img" src="./images/projects/${item.image}" alt="${item.name}" />
                 </div>
