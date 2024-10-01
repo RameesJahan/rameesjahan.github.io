@@ -1,307 +1,258 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
 
-    <title>Ramees Jahan</title>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
 
-    <!---bootstrap styles-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <!---font-awesome icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Google Search Console -->
-    <meta name="google-site-verification" content="Gy8ll0emWiKNuLHBLA8GN5CLLpFRt9DsiYmFETWgOOU" />
-    <!---My styles-->
-    <link rel="stylesheet" href="./css/style.min.css" type="text/css" media="all" />
-  </head>
-  <body>
-    <div class="loader-container" id="loader-container">
-      <span class="loader"></span>
-    </div>
-    <div class="main-body">
-      <section class="section-head" id="section-head">
-        <h3>Hello, I am</h3>
-        <div class="main-heading-container">
-          <h1 class="main-heading">Ramees Jahan</h1>
-        </div>
-        <p class="main-disc">
-          A Student at
-          <a href="https://sias.edu.in/">SAFI Institute of Advanced Study</a>
-        </p>
-        <div class="main-btn-container">
-          <a class="main-btn" href="./resume/Ramees_Jahan_Resume.pdf">Get Resume</a>
-          <a class="main-btn" onclick="scrollToSection('section-contact')">Contact Me</a>
-        </div>
-        <video autoplay muted loop class="bg-video">
+  <title>Ramees Jahan</title>
+
+  <!---bootstrap styles-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!---font-awesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="Gy8ll0emWiKNuLHBLA8GN5CLLpFRt9DsiYmFETWgOOU" />
+  <!---My styles-->
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <div class="loader-container" id="loader-container">
+    <span class="loader"></span>
+  </div>
+  <div class="main-body">
+    <section class="section-head" id="section-head">
+      <h3 class="main-heading-pre-txt">Hello, I am</h3>
+      <div class="main-heading-container">
+        <h1 class="main-heading">Ramees Jahan</h1>
+      </div>
+      <p class="main-disc">
+        React JS | React Native Developer
+      </p>
+      <div class="main-btn-container">
+        <a class="main-btn" href="./resume/Ramees_Jahan_Resume.pdf">Get Resume</a>
+        <!-- <a class="main-btn" onclick="scrollToSection('section-contact')">Contact Me</a> -->
+      </div>
+      <!-- <video autoplay muted loop class="bg-video">
           <source src="videos/bgvideo.mp4" type="video/mp4" />
-        </video>
-        <nav id="nav-bar">
-          <h1 class="main-title title-section">Ramees</h1>
-          <ul id="nav-toggle">
-            <li class="nav-list-item shown">
-              <a  onclick="scrollToSection('section-head');navToggle()">Home</a>
-            </li>
-            <li class="nav-list-item shown">
-              <a  onclick="scrollToSection('section-about');navToggle()">About</a>
-            </li>
-            <li class="nav-list-item shown">
-              <a onclick="scrollToSection('section-skills');navToggle()">Skills</a>
-            </li>
-            <li class="nav-list-item shown">
-              <a onclick="scrollToSection('section-contact');navToggle()">Contact</a>
-            </li>
-          </ul>
-          <div class="nav-toggle-icon">
-            <div
-              id="nav-humburger"
-              class="hamburger hamburger--spin"
-              onclick="navToggle()"
-            >
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
+        </video> -->
+      <nav id="nav-bar">
+        <h1 class="main-title title-section">Ramees</h1>
+        <ul id="nav-toggle">
+          <li class="nav-list-item shown">
+            <span onclick="scrollToSection('section-head');navToggle()">Home</span>
+          </li>
+          <li class="nav-list-item shown">
+            <span onclick="scrollToSection('section-about');navToggle()">About</span>
+          </li>
+          <li class="nav-list-item shown">
+            <span onclick="scrollToSection('section-projects');navToggle()">Projects</span>
+          </li>
+          <li class="nav-list-item shown">
+            <span onclick="scrollToSection('section-skills');navToggle()">Skills</span>
+          </li>
+          <li class="nav-list-item shown">
+            <span onclick="scrollToSection('section-contact');navToggle()">Contact</span>
+          </li>
+        </ul>
+        <div class="nav-toggle-icon">
+          <div id="nav-humburger" class="hamburger hamburger--spin" onclick="navToggle()">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
             </div>
           </div>
-        </nav>
-        <div onclick="scrollToSection('section-about')" class="scroll-me" id="scroll-me">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="50"
-            height="50"
-          >
-            <path
-              d="M5.22 8.72a.75.75 0 011.06 0L12 14.44l5.72-5.72a.751.751 0 011.042.018.751.751 0 01.018 1.042l-6.25 6.25a.75.75 0 01-1.06 0L5.22 9.78a.75.75 0 010-1.06z"
-            ></path>
-          </svg>
         </div>
-      </section>
+      </nav>
+      <div onclick="scrollToSection('section-about')" class="scroll-me" id="scroll-me">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
+          <path
+            d="M5.22 8.72a.75.75 0 011.06 0L12 14.44l5.72-5.72a.751.751 0 011.042.018.751.751 0 01.018 1.042l-6.25 6.25a.75.75 0 01-1.06 0L5.22 9.78a.75.75 0 010-1.06z">
+          </path>
+        </svg>
+      </div>
+    </section>
 
-      <section id="section-about" class="section-about">
-        <div class="container">
-          <div class="about-content container">
-            <div class="row">
-              <div class="about-img-container col-sm-4">
-                <img
-                  class="about-img-main"
-                  src="./images/img_main.png"
-                  alt="Image Not Found"
-                />
-              </div>
-              <div class="about-content-container col-sm-8">
-                <h2 class="about-content-title title-section">About Me</h2>
-                <p class="about-content-disc">
-                  &emsp;Hello! I'm Ramees Jahan, a final year student pursuing BCA at SAFI
-                  Institute of Advanced Study, Vazhayur. With a passion for web
-                  development, I've honed my skills in HTML, CSS, and JavaScript, and
-                  delved deeper into frameworks like React.js and Node.js. I'm proficient
-                  in utilizing tools such as Tailwind CSS and DaisyUI to create visually
-                  stunning and responsive websites. Additionally, I have experience
-                  working with databases like MongoDB and Firebase, enabling me to build
-                  dynamic and interactive web applications.
+    <section id="section-about" class="section-about">
+      <div class="container">
+        <div class="about-content container">
+          <div class="row">
+            <div class="about-img-container col-sm-4">
+              <img class="about-img-main" src="./images/img_main.png" alt="Image Not Found" />
+            </div>
+            <div class="about-content-container col-sm-8">
+              <h2 class="about-content-title title-section">About Me</h2>
+              <p class="about-content-disc">
+                &emsp;Hello! I'm Ramees Jahan, a BCA graduate passionate about creating seamless digital experiences.
+                My expertise lies in React.js for web development, React Native for mobile development, and using
+                Tailwind CSS and Bootstrap for
+                responsive design. I also have solid back-end experience with Node.js, Firebase, and cloud services like
+                AWS, allowing me to build secure, scalable, and efficient applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-projects" class="section-projects">
+      <div class="container">
+        <div class="projects-content container">
+          <div class="projects-content-container">
+            <h2 class="projects-content-title title-section">Projects</h2>
+            <div class="projects-content-main row" id="projects-container">
+              
+
+              
+              <!-- Projects will be loaded from javascript -->
+              <!-- <div class="col-sm-4 p-2" >
+               <div class="project-item-container">
+                <div class="project-item-img-container">
+                  <img class="project-item-img" src="./images/projects/sos-game-thumb.png" alt="Blah" />
+                </div>
+                <div class="project-item-content">
+                  <h6 class="project-item-title">SOS Game</h6>
+                  <div class="project-item-tags-container">
+                    <span class="project-item-tag">React</span>
+                  </div>
+                  <p class="project-item-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, libero
+                    atque itaque quibusdam tenetur in, doloremque ipsam totam voluptates veniam rerum. Reiciendis sit
+                    alias aut laborum facilis voluptate dolorem at!
+                  </p>
+                  <a href="#" class="project-item-link">Learn More</a>
+                </div>
+                </div>
+              </div> -->
+
+            </div>
+            <div class="projects-view-more-container">
+              <a class="projects-view-more-btn" href="https://github.com/RameesJahan?tab=repositories">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-skills" class="section-skills">
+      <div class="container">
+        <div class="skills-content container">
+          <div class="skills-content-container">
+            <h2 class="skills-content-title title-section">Skills</h2>
+            <div class="skills-content-main row" id="skills-container">
+              <!-- Skills will be loaded from javascript -->
+
+              <!-- <div class="skills-content-main-block col-sm-6">
+                <div class="skills-content-main-title-container">
+                  <h5 class="skills-content-main-title">HTML</h5>
+                  <h5 class="skills-content-main-progress">90%</h5>
+                </div>
+                <div class="bar-container">
+                  <div class="bar-progress" style="width: 90%"></div>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact" id="section-contact">
+      <div class="container">
+        <div class="contact-content container">
+          <h2 class="contact-content-title title-section">Contact</h2>
+
+          <div class="container row">
+            <div class="col-sm-6">
+              <div class="contact-tagline-container">
+                <p>
+                  Thanks for stopping by! Whether you have questions,
+                  comments, or just want to say hello, I'm always happy to
+                  connect with new people. Feel free to reach out and start
+                  the conversation!”
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="section-skills" class="section-skills">
-        <div class="container">
-          <div class="skills-content container">
-            <div class="skills-content-container">
-              <h2 class="skills-content-title title-section">Skills</h2>
-              <div class="skills-content-main row">
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">HTML</h5>
-                    <h5 class="skills-content-main-progress">90%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 90%"></div>
-                  </div>
+            <div class="col-sm-6">
+              <div class="contact-links-container">
+                <div>
+                  <img class="icon" src="./images/mail.png" alt="Image Not Found" /> <a
+                    href="mailto: rameesjahanma@gmail.com?subject=ProfileVisit">rameesjahanma@gmail.com</a>
                 </div>
-
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">CSS</h5>
-                    <h5 class="skills-content-main-progress">80%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 80%"></div>
-                  </div>
+                <div>
+                  <img class="icon" src="./images/location.png" alt="Image Not Found" />Areekode, Kerala, India
                 </div>
-
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">Java Script</h5>
-                    <h5 class="skills-content-main-progress">75%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 75%"></div>
-                  </div>
-                </div>
-
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">Git</h5>
-                    <h5 class="skills-content-main-progress">70%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 70%"></div>
-                  </div>
-                </div>
-
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">React JS</h5>
-                    <h5 class="skills-content-main-progress">80%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 80%"></div>
-                  </div>
-                </div>
-
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">Node JS</h5>
-                    <h5 class="skills-content-main-progress">75%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 75%"></div>
-                  </div>
-                </div>
-                
-                <div class="skills-content-main-block col-sm-6">
-                  <div class="skills-content-main-title-container">
-                    <h5 class="skills-content-main-title">MongoDB</h5>
-                    <h5 class="skills-content-main-progress">75%</h5>
-                  </div>
-                  <div class="bar-container">
-                    <div class="bar-progress" style="width: 75%"></div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-contact" id="section-contact">
-        <div class="container">
-          <div class="contact-content container">
-            <h2 class="contact-content-title title-section">Contact</h2>
-
-            <div class="container row">
-              <div class="col-sm-6">
-                <div class="contact-tagline-container">
-                  <p>
-                    Thanks for stopping by! Whether you have questions,
-                    comments, or just want to say hello, I'm always happy to
-                    connect with new people. Feel free to reach out and start
-                    the conversation!”
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="contact-links-container">
-                  <div>
-                    <img
-                      class="icon"
-                      src="./images/mail.png"
-                      alt="Image Not Found"
-                    /> <a href="mailto: rameesjahan37@gmail.com?subject=ProfileVisit">rameesjahan37@gmail.com</a>
-                  </div>
-                  <div>
-                    <img
-                      class="icon"
-                      src="./images/location.png"
-                      alt="Image Not Found"
-                    />Areekode, Kerala, India
-                  </div>
-                  <div class="icons-wrapper">
-                    <a href="https://www.instagram.com/ramees.kzp/">
-                      <div class="icon-container">
-                        <img class="icon" src="./images/instagram.png" />
-                      </div>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100022148014436">
-                      <div class="icon-container">
-                        <img class="icon" src="./images/facebook.png" />
-                      </div>
-                    </a>
-                    <a href="https://twitter.com/RameesKZP">
-                      <div class="icon-container">
-                        <img class="icon" src="./images/twitter.png" />
-                      </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ramees-jahan-m-a-900816255">
-                      <div class="icon-container">
-                        <img class="icon" src="./images/linkedin.png" />
-                      </div>
-                    </a>
-                    <a href="https://github.com/RameesJahan">
-                      <div class="icon-container">
-                        <img class="icon" src="./images/github.png" />
-                      </div>
-                    </a>
-                  </div>
+                <div class="icons-wrapper">
+                  <a href="https://www.instagram.com/ramees.kzp/">
+                    <div class="icon-container">
+                      <img class="icon" src="./images/instagram.png" />
+                    </div>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=100022148014436">
+                    <div class="icon-container">
+                      <img class="icon" src="./images/facebook.png" />
+                    </div>
+                  </a>
+                  <a href="https://twitter.com/RameesKZP">
+                    <div class="icon-container">
+                      <img class="icon" src="./images/twitter.png" />
+                    </div>
+                  </a>
+                  <a href="https://www.linkedin.com/in/rameesjahan">
+                    <div class="icon-container">
+                      <img class="icon" src="./images/linkedin.png" />
+                    </div>
+                  </a>
+                  <a href="https://github.com/RameesJahan">
+                    <div class="icon-container">
+                      <img class="icon" src="./images/github.png" />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section-footer">
-        <div class="row container">
-          <div class="col-sm-6">
-            <h3 class="footer-title">Quik Links</h3>
-            <div class="footer-links-container">
-              <p onclick="scrollToSection('section-head')">Home</p>
-              <p onclick="scrollToSection('section-about')">About</p>
-              <p onclick="scrollToSection('section-skills')">Skills</p>
-              <p onclick="scrollToSection('section-contact')">Contact</p>
-            </div>
+      </div>
+    </section>
+    <section class="section-footer">
+      <div class="row container">
+        <div class="col-sm-6">
+          <h3 class="footer-title">Quik Links</h3>
+          <div class="footer-links-container">
+            <p onclick="scrollToSection('section-head')">Home</p>
+            <p onclick="scrollToSection('section-about')">About</p>
+            <p onclick="scrollToSection('section-projects')">Projects</p>
+            <p onclick="scrollToSection('section-skills')">Skills</p>
+            <p onclick="scrollToSection('section-contact')">Contact</p>
           </div>
-          <div class="col-sm-6">
-            <h3 class="footer-title">Credits</h3>
-            <div class="footer-credits-container row">
-              <p>Icons and Videos are from:</p>
-              <a class="col" href="https://www.flaticon.com/"><img class="credit-icon" src="./images/flaticon.svg"/></a>
-              <a class="col" href="https://pixabay.com/videos/"><img class="credit-icon pixabay" src="./images/pixabay.png"/></a>
-            </div>
-          </div>
-          <p class="copyright-text">©Ramees Jahan</p>
         </div>
-      </section>
-    </div>
+        <div class="col-sm-6">
+          <h3 class="footer-title">Credits</h3>
+          <div class="footer-credits-container row">
+            <p>Icons and Videos are from:</p>
+            <a class="col" href="https://www.flaticon.com/"><img class="credit-icon" src="./images/flaticon.svg" /></a>
+            <a class="col" href="https://pixabay.com/videos/"><img class="credit-icon pixabay"
+                src="./images/pixabay.png" /></a>
+          </div>
+        </div>
+        <p class="copyright-text">©Ramees Jahan</p>
+      </div>
+    </section>
+  </div>
 
-    <!---scripts-->
-    <script
-      src="./js/script.min.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
+  <!---scripts-->
+  <script src="./js/script.js" type="text/javascript" charset="utf-8"></script>
 
-    <!---bootstrap scripts-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!---bootstrap scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
